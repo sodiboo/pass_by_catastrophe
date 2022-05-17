@@ -1,4 +1,4 @@
-# [Pass by catastrophe](https://twitter.com/Dev14e/status/1526324763521871872?s=20&t=D0vQ6_p-NYlWv_QpuTpAsg)
+# [Pass by catastrophe](https://twitter.com/Dev14e/status/1526324763521871872)
 
 This is a library that has two helper traits for conciceness, and a helper function for DRY code.
 
