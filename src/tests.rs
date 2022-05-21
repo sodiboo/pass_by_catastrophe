@@ -52,10 +52,3 @@ where
     );
     panic_any(a + b + c + d)
 }
-
-fn whatever() -> Result<String, impl Error> {
-    match read_to_string("./a") {
-        Ok(a) => Ok(a),
-        Err(b) => Err(b),
-    }
-}
