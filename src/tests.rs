@@ -1,9 +1,4 @@
-use std::{
-    ops::{Add, Range},
-    panic::panic_any,
-};
-
-use crate::{catastrophe, DisasterWaitingToHappen, Catastrophic};
+magic_import::magic!();
 
 #[test]
 fn test_add() {
@@ -55,5 +50,12 @@ where
         c.HALT_AND_CATCH_FIRE() => Num,
         d.HALT_AND_CATCH_FIRE() => Num,
     );
-    panic_any(a + b + c + d);
+    panic_any(a + b + c + d)
+}
+
+fn whatever() -> Result<String, impl Error> {
+    match read_to_string("./a") {
+        Ok(a) => Ok(a),
+        Err(b) => Err(b),
+    }
 }
